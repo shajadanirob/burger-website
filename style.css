@@ -235,10 +235,11 @@ nav li a {
 
 
 
+
    .new-menu-content{
       grid-template-columns: repeat(1,1fr);
       width: 10%;
-   margin-left: 40px;
+   margin-left: 20px;
    }
    .menuh1{
       font-size: 50px;
@@ -250,6 +251,11 @@ nav li a {
       grid-template-columns: repeat(1,1fr);
       padding: 50px;
       gap: 70px;
+   }
+
+
+   .make-good{
+      height: 90vh;
    }
 }
 
