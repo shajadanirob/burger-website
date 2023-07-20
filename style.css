@@ -1,0 +1,265 @@
+ *{
+    font-family: 'Poppins', sans-serif;
+  
+ }
+ :root{
+    --main-color:#ff702a;
+    --text-color:#fff;
+    --bg-color:#1e1c2a;
+    --big-font:5rem;
+    --h2-font:2.25rem;
+    --p-font:0.9rem;
+ }
+ body{
+   background-color: #1e1c2a;
+ }
+ main{
+   max-width: 1140px;
+   margin: 0 auto;
+ }
+ header{
+    background-color: #1e1c2a;
+    padding: 40px , 250px;
+    color: #fff;
+ }
+ nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+ nav >ul{
+    display: flex;
+ }
+
+ ul>li {
+    list-style: none;
+    margin-right: 30px;
+    /* font-weight: 500; */
+    font-size:var(--p-font);
+}
+
+nav li a {
+    text-decoration: none;
+    color:white;
+    font-size: 17px;
+}
+.logo{
+   font-size: var(--h2-font);
+   color: #ff702a;
+}
+/* end nav bar */
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+   
+}
+.banner-title{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-img img{
+   width: 100%;
+   height: 50%;
+   margin: 0 auto;
+}
+.bannerh1{
+   color: var(--main-color);
+   font-size: var(--big-font);
+   font-weight: 600;
+}
+.bannerh2{
+   color:#fff;
+   font-size: var(--h2-font);
+}
+.btn{
+   padding: 15px 35px;
+   border: none;
+   background-color: var(--main-color);
+   cursor: pointer;
+   color: #fff;
+}
+/* abuot */
+
+.about{
+   display: flex;
+   margin-top: 120px;
+   gap: 100px;
+   align-items: center;
+}
+.about-title{
+   align-items: center;
+}
+.about-des{
+   color: var(--main-color);
+}
+.about-h2{
+   font-size: var(--h2-font);
+   color: #fff;
+}
+.about-des2{
+   color: #fff;
+}
+
+/* about */
+/* menu */
+
+.new-menu-container{
+   margin-top: 120px;
+}
+.new-menu-content{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 70px;
+   text-align: center;
+ 
+ 
+}
+.new-menu-item{
+   border: none ;
+   border-radius: 25px;
+   background-color: lightgray;
+   transition: .3s;
+}
+.new-menu-item:hover{
+   transform: translateY(-15px);
+}
+.menu-p1{
+   color: var(--main-color);
+   text-align: center;
+}
+.menu-h2{
+   color: #fff;
+   font-size: var(--h2-font);
+   text-align: center;
+}
+.menuh1{
+   font-size:var(--big-font);
+   color:var(--main-color);
+   text-align: center;
+   border-bottom: 5px solid #1e1c2a;
+   border-radius: 50px;
+}
+.menu-h3{
+   font-size: 30px;
+   font-weight: bold;
+}
+.menu-p{
+   font-size: 15px;
+   font-weight: bold;
+   color: var(--main-color);
+}
+
+/* service */
+.Service{
+ margin-top: 120px;
+}
+.service-content{
+   display: grid ;
+   grid-template-columns: repeat(3,1fr);
+   text-align: center;
+ 
+}
+
+.service-item img{
+   width: 50%;
+}
+.service-p2{
+   color: white;
+}
+.service-p{
+   color: #ff702a;
+   font-weight: 800;
+}
+/* service */
+/* make */
+
+.make-good{
+   background-color: lightpink;
+   margin-top: 120px;
+   height: 40vh;
+   border-radius: 30px;
+}
+.make-title{
+   text-align: center;
+   padding-top: 100px;
+}
+.make-title h2{
+   font-size: var(--h2-font);
+   
+}
+
+/* make */
+@media screen and (max-width:570px) {
+  header{
+   padding: 40px;
+  }
+  
+   nav{
+      flex-direction: column;
+   }
+   nav>ul{
+      flex-direction: column;
+      gap: 20px;
+   }
+   .banner{
+      flex-direction: column-reverse;
+   }
+   .banner-img img{
+      width: 100%;
+      padding-top: 20px;
+   }
+   .banner-title{
+      text-align: center;
+   }
+   .bannerh1{
+      font-size: 50px;
+   }
+   .bannerh2{
+      font-size: 25px;
+   }
+
+
+.about{
+   flex-direction: column;
+   padding: 50px;
+}
+.about-img{
+   width: 100%;
+}
+
+
+
+
+   .new-menu-content{
+      grid-template-columns: repeat(1,1fr);
+      width: 10%;
+   margin-left: 40px;
+   }
+   .menuh1{
+      font-size: 50px;
+   }
+
+
+
+   .service-content{
+      grid-template-columns: repeat(1,1fr);
+      padding: 50px;
+      gap: 70px;
+   }
+}
+
+@media screen and (min-width:576px) and (max-width: 960px){
+   .make-good{
+      height: 100vh;
+   }
+   .new-menu-content{
+       grid-template-columns: repeat(1,1fr); 
+      
+     
+   }
+}
